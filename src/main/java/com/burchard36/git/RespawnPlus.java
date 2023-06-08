@@ -4,6 +4,7 @@ import com.burchard36.git.commands.CommandHandler;
 import com.burchard36.git.config.PluginMessages;
 import com.burchard36.git.config.PluginSettings;
 import com.burchard36.git.events.GlobalAttackListener;
+import com.burchard36.git.events.GlobalInteractListener;
 import com.burchard36.git.events.GlobalQuitListener;
 import com.burchard36.git.events.GlobalRespawnListener;
 import lombok.Getter;
@@ -45,6 +46,7 @@ public final class RespawnPlus extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(new GlobalAttackListener(this), this);
         this.getServer().getPluginManager().registerEvents(new GlobalQuitListener(this), this);
         this.getServer().getPluginManager().registerEvents(new GlobalRespawnListener(this), this);
+        this.getServer().getPluginManager().registerEvents(new GlobalInteractListener(this), this);
 
         getCommand("respawnplus").setExecutor(new CommandHandler(this));
     }

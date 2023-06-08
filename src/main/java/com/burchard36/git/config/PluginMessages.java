@@ -15,6 +15,8 @@ public class PluginMessages implements Configable {
     protected static String unableToAttackPlayer;
     @Getter
     protected static String unableToAttackEntity;
+    @Getter
+    protected static String unableToInteract;
 
     public PluginMessages(final RespawnPlus pluginInstance) {
         this.pluginInstance = pluginInstance;
@@ -28,6 +30,7 @@ public class PluginMessages implements Configable {
         invincibilityExpired = config.getString("Messages.InvincibilityExpired");
         unableToAttackPlayer = config.getString("Messages.UnableToAttackPlayer");
         unableToAttackEntity = config.getString("Messages.UnableToAttackEntity");
+        unableToInteract = config.getString("Messages.UnableToInteract");
     }
 
     @Override

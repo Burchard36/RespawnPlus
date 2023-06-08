@@ -38,4 +38,6 @@ Messages:
   UnableToAttackPlayer: "&cYou may not attack other players while invincible!"
   # Message to send if PreventPvEDuringInvincibility is true
   UnableToAttackEntity: "&cYou may not harm other mobs while invincible!"
+  # Message to send if PreventInteractionDuringInvincibility is true
+  UnableToInteract: "&cYou are unable to interact with blocks while invincible"
 
