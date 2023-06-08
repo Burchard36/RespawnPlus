@@ -1,0 +1,10 @@
+name: RespawnPlus
+version: '${project.version}'
+main: com.burchard36.git.RespawnPlus
+api-version: 1.19
+description: A Collection of tools for respawning
+depend:
+  - Vault
+commands:
+  respawnplus:
+    permission: respawnplus.admin

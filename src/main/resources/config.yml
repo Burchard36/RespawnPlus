@@ -1,0 +1,41 @@
+RespawnSettings:
+
+  # How much time (In minecraft ticks) should the player
+  # Be invincibile for?
+  #
+  # If the config is reloaded, players with the old cooldown time will still have it
+  # bus subsequent players will receive the new reloaded timer time
+  InvincibleTimer: 100 # 100 ticks = 5 seconds (20 ticks to a second)
+
+  # How fast you want the timer to update, recommended to not change this
+  # DOES NOT GET RELOADED WITH /respawnplus reload
+  TimerUpdateRate: 4 # in Ticks
+
+  # If set to true, the player will immediately cancel they're
+  # invincibility timer
+  #
+  # If set to false, the player will be unable to hurt others, and visa versa
+  CancelInvincibilityOnAttack: true
+
+  # Prevent opening of most containers while the player is invincible if set to true
+  PreventInteractionDuringInvincibility: true
+
+  # Prevents the playing from harming mobs while invincible if set to true (Mobs will never be able to hurt them)
+  PreventPvEDuringInvincibility: true
+
+  # Only apply the invincibility if the player was killed by another player
+  OnlyApplyInvincibilityIfKilledByPlayer: true
+
+Messages:
+
+  # Message that gets sent when the player
+  InvincibilityApplied: "&aYou have been given invincibility for %s seconds"
+
+  # Message that gets sent when the player's invincibility timer expires
+  # May also get sent if CancelInvincibilityOnAttack is true and the player attacks a player
+  InvincibilityExpired: "&cYour invincibility has been removed!"
+  # Message to send if CancelInvincibilityOnAttack is set to false
+  UnableToAttackPlayer: "&cYou may not attack other players while invincible!"
+  # Message to send if PreventPvEDuringInvincibility is true
+  UnableToAttackEntity: "&cYou may not harm other mobs while invincible!"
+
